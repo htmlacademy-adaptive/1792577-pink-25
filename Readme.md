@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Лилиана Леднёва](https://up.htmlacademy.ru/adaptive/25/user/1792577).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Панасюк](https://htmlacademy.ru/profile/sasha_oldsport).
 
 ---
 
