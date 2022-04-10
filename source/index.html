@@ -13,26 +13,29 @@
         <img class="header-main__logo-img" src="../image/pink.svg" alt="Pink" width="74" height="23">
       </a>
       <nav class="nav">
-        <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span> <svg width="50" height="24" viewBox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.13659 0.00020839C0.986512 -0.00251551 0.837358 0.0214885 0.698091 0.0707781C0.558823 0.120068 0.432317 0.193625 0.326173 0.28703C0.22003 0.380436 0.136442 0.49176 0.0804303 0.614315C0.024419 0.73687 -0.00285856 0.868124 0.000236809 1.00019V3.00016C0.000236809 3.26537 0.119959 3.51972 0.333067 3.70725C0.546174 3.89478 0.83521 4.00014 1.13659 4.00014H48.8634C49.0135 4.00286 49.1626 3.97886 49.3019 3.92957C49.4412 3.88028 49.5677 3.80672 49.6738 3.71332C49.78 3.61991 49.8636 3.50859 49.9196 3.38603C49.9756 3.26348 50.0029 3.13222 49.9998 3.00016V1.00019C49.9998 0.734979 49.88 0.48063 49.6669 0.293097C49.4538 0.105563 49.1648 0.00020839 48.8634 0.00020839H1.13659ZM1.13659 10C0.986512 9.99731 0.837358 10.0213 0.698091 10.0706C0.558823 10.1199 0.432317 10.1935 0.326173 10.2869C0.22003 10.3803 0.136442 10.4916 0.0804303 10.6141C0.024419 10.7367 -0.00285856 10.868 0.000236809 11V13C0.000236809 13.2652 0.119959 13.5195 0.333067 13.7071C0.546174 13.8946 0.83521 14 1.13659 14H48.8634C49.0135 14.0027 49.1626 13.9787 49.3019 13.9294C49.4412 13.8801 49.5677 13.8065 49.6738 13.7131C49.78 13.6197 49.8636 13.5084 49.9196 13.3859C49.9756 13.2633 50.0029 13.132 49.9998 13V11C49.9998 10.7348 49.88 10.4805 49.6669 10.2929C49.4538 10.1054 49.1648 10 48.8634 10H1.13659ZM1.13659 19.9999C0.986512 19.9971 0.837358 20.0211 0.698091 20.0704C0.558823 20.1197 0.432317 20.1933 0.326173 20.2867C0.22003 20.3801 0.136442 20.4914 0.0804303 20.614C0.024419 20.7365 -0.00285856 20.8678 0.000236809 20.9998V22.9998C0.000236809 23.265 0.119959 23.5194 0.333067 23.7069C0.546174 23.8944 0.83521 23.9998 1.13659 23.9998H48.8634C49.0135 24.0025 49.1626 23.9785 49.3019 23.9292C49.4412 23.8799 49.5677 23.8064 49.6738 23.713C49.78 23.6196 49.8636 23.5082 49.9196 23.3857C49.9756 23.2631 50.0029 23.1319 49.9998 22.9998V20.9998C49.9998 20.7346 49.88 20.4803 49.6669 20.2927C49.4538 20.1052 49.1648 19.9999 48.8634 19.9999H1.13659Z" fill="white"/>
+          </svg>
+          </button>
         <div class="nav__wrapper">
           <ul class="nav__list site-list">
             <li class="site-list__item">
-              <a class="site-list__item--link" href="index.html">
+              <a class="site-list__link" href="index.html">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__item--link" href="#">
+              <a class="site-list__link" href="catalog.html">
                 Фотографии
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__item--link" href="#">
+              <a class="site-list__link" href="#">
                 Конкурс
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__item--link" href="#">
+              <a class="site-list__link" href="#">
                 HTML Academy
               </a>
             </li>
@@ -41,48 +44,50 @@
       </nav>
     </div>
     <section class="header-main__download">
-      <h2 class="header-main__download--title">Взгляните на жизнь иначе!</h2>
-      <button class="button header-main__download-button" type="button">Скачать приложение</button>
-      <ul class="header-main__download--platform download--platform--list">
-        <li class="download--platform--item">
-          <a class="download--platform--item--link" href="#">
+      <h2 class="header-main__download-title">Взгляните на жизнь иначе!</h2>
+      <button class="button button--download" type="button">Скачать приложение</button>
+      <div class="download-platform">
+      <ul class=" download-platform__list">
+        <li class="download-platform__item">
+          <a class="download-platform__item-link" href="#">
             <span class="visually-hidden">Скачать для Apple</span>
-            <img class="download--platform--item__logo" src="../image/apple-logo.svg" alt="Логотип Apple">
+            <img class="download-platform__item__logo-apple" src="../image/apple-logo.svg" alt="Логотип Apple">
           </a>
         </li>
-        <li class="download--platform--item">
-          <a class="download--platform--item--link" href="#">
+        <li class="download-platform__item">
+          <a class="download-platform__item-link" href="#">
             <span class="visually-hidden">Скачать для Android</span>
-            <img class="download--platform--item__logo" src="../image/android-logo.svg" alt="Логотип Android">
+            <img class="download-platform__item__logo-android" src="../image/android-logo.svg" alt="Логотип Android">
           </a>
         </li>
-        <li class="download--platform--item">
-          <a class="download--platform--item--link" href="#">
+        <li class="download-platform__item">
+          <a class="download-platform__item-link" href="#">
             <span class="visually-hidden">Скачать для Windows</span>
-            <img class="download--platform--item__logo" src="../image/microsoft-logo.svg" alt="Логотип Windows">
+            <img class="download-platform__item__logo-windows" src="../image/microsoft-logo.svg" alt="Логотип Windows">
           </a>
         </li>
       </ul>
-      <p class="download--platform--text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    </div>
+      <p class="header-main__download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </section>
     <main class="main-container">
       <h1 class="main-container__title">Устали от серости мегаполиса?</h1>
       <p class="main-container__slogan">Нам есть, что вам <br> предложить!</p>
       <section class="features">
-        <div class=" features__wrapper">
+        <div class=" features__wrapper slider">
           <h2 class="visually-hidden">Для чего наше прилоение</h2>
           <ul class="features__list slider__list">
-            <li class="features__item features__item--mood">
+            <li class="features__item slider__item features__item--mood">
               <h3 class="features__title">Поднимает настроение</h3>
               <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
                 несколько кликов!</p>
             </li>
-            <li class="features__item features__item--change-world">
+            <li class="features__item slider__item features__item--change-world">
               <h3 class="features__title">Меняет мир вокруг</h3>
               <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
                 усилить эффект</p>
             </li>
-            <li class="features__item features__item--new-meeting">
+            <li class="features__item slider__item features__item--new-meeting">
               <h3 class="features__title">Заводит новых друзей</h3>
               <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
                 новых</p>
@@ -91,7 +96,7 @@
         </div>
       </section>
       <div class="detailed">
-        <div class="detailed--wrapper">
+        <div class="detailed__wrapper">
         <p class="detailed__title">Эффект на 24 часа!</p>
         <p class="detailed__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
         <a class="detailed__link" href="#">Узнать больше об исследовании</a>
@@ -101,7 +106,7 @@
         <div class="reviews__wrapper slider">
           <h2 class="visually-hidden">Отзывы</h2>
           <ul class="reviews__list slider__list">
-            <button class="button reviews__buttom--back" type="button">
+            <button class="reviews__buttom-back" type="button">
               <svg class="reviews__arow reviews__arow--back" width="22" height="41" viewBox="0 0 22 41" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path opacity="0.3"
@@ -116,7 +121,7 @@
                 серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
               </p>
             </li>
-            <button class="button reviews__buttom--forward" type="button">
+            <button class="reviews__buttom-forward" type="button">
               <svg class="reviews__arow reviews__arow--forward" width="22" height="41" viewBox="0 0 22 41" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path opacity="0.3"
@@ -134,37 +139,37 @@
       </section>
       <section class="price">
         <img src="../image/price.png" alt="Виды подписки">
-        <p class="price__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle slider__toggle--current" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
+        <p class="price__toggles slider-toggles">
+          <button class="slider-toggle" type="button">1</button>
+          <button class="slider-toggle slider__toggle--current" type="button">2</button>
+          <button class="slider-toggle" type="button">3</button>
         </p>
       </section>
       <section class="contact">
         <h2 class="visually-hidden">Как нас найти</h2>
         <p class="contact__text">Остались вопросы?<br> Свяжитесь с нами!</p>
-        <div class="contact__wrapper-phone">
-          <p class="contact__wrapper-phone--text">Звоните:</p>
-          <a class="contact__wrapper-phone--phone--link phone" href="+7812555-66-66">+7 (812) 555-66-66</a>
+        <div class="contact__phone contact__phone__wrapper">
+          <p class="contact__phone__text">Звоните:</p>
+          <a class="contact__phone__link phone" href="+78125556666">+7 (812) 555-66-66</a>
         </div>
-        <div class="contact__wrapper-addres">
-          <p class="contact__addres--text">Приезжайте в гости:</p>
-          <a class="contact__addres--link addres" href="#">ул. Большая
+        <div class="contact__address contact__address__wrapper">
+          <p class="contact__address__text">Приезжайте в гости:</p>
+          <a class="contact__address__link address" href="#">ул. Большая
             Конюшенная, 19/8</a>
         </div>
-        <div class="contact__wrapper-email">
-          <p class="contact__email--text">Пишите:</p>
-          <a class="contact__email--link email" href="#">mail@htmlacademy.ru</a>
+        <div class="contact__email contact__email__wrapper">
+          <p class="contact__email-text">Пишите:</p>
+          <a class="contact__email__link email" href="#">mail@htmlacademy.ru</a>
         </div>
-        <a class="contact__map--link" href="#">
-          <img class="contact__map--image" src="../image/map.jpg" alt="Мы на карте" width="1200" height="502">
+        <a class="contact__map-link" href="#">
+          <img class="contact__map-image" src="../image/map.jpg" alt="Мы на карте" width="1200" height="502">
         </a>
       </section>
     </main>
     <footer class="footer">
       <div class="footer__logo">
-        <a class="footer__logo--link" href="index.html">
-                  <svg class="footer__logo--image" width="145" height="40" viewBox="0 0 145 40" fill="none"
+        <a class="footer__logo__link" href="index.html">
+                  <svg class="footer__logo-image" width="145" height="40" viewBox="0 0 145 40" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path
             d="M71.005 18.5486C71.0049 18.2125 71.1358 17.8898 71.3697 17.6494C71.6037 17.409 71.922 17.2701 72.2568 17.2623H79.39C84.4469 17.2623 87.7751 19.9645 87.7751 24.3918V24.4516C87.7751 29.2977 83.7415 31.8105 78.9727 31.8105H73.5384V38.611C73.5539 38.7874 73.5328 38.9651 73.4762 39.1329C73.4196 39.3006 73.3289 39.4547 73.2097 39.5854C73.0906 39.716 72.9457 39.8204 72.7842 39.8918C72.6227 39.9631 72.4481 40 72.2717 40C72.0952 40 71.9207 39.9631 71.7592 39.8918C71.5977 39.8204 71.4527 39.716 71.3336 39.5854C71.2145 39.4547 71.1237 39.3006 71.0671 39.1329C71.0106 38.9651 70.9894 38.7874 71.005 38.611V18.5486ZM79.0721 29.5171C82.7778 29.5171 85.2119 27.5228 85.2119 24.5314V24.4716C85.2119 21.2608 82.8175 19.5956 79.2509 19.5956H73.588V29.4772L79.0721 29.5171Z"
@@ -185,9 +190,9 @@
         </a>
       </div>
       <div class="footer__socials">
-        <ul class="footer__socials--list">
-          <li class="footer__socials--item vkontacte"><span class="visually-hidden">Мы вконтакте</span>
-            <a class="footer__socials--item-icon" href="#">
+        <ul class="footer__socials__list">
+          <li class="footer__socials__item vkontacte"><span class="visually-hidden">Мы вконтакте</span>
+            <a class="footer__socials__item-icon" href="#">
             <svg class="icon-vkontakte" width="18" height="18" viewBox="0 0 18 18"
               fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_38251_58)">
@@ -203,8 +208,8 @@
             </svg>
           </a>
           </li>
-          <li class="footer__socials--item telegram"><span class="visually-hidden">Мы в телеграм</span>
-            <a class="footer__socials--item-icon" href="#">
+          <li class="footer__socials__item telegram"><span class="visually-hidden">Мы в телеграм</span>
+            <a class="footer__socials__item-icon" href="#">
             <svg class="icon-telegram" width="16" height="14" viewBox="0 0 16 14" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -213,8 +218,8 @@
             </svg>
             </a>
           </li>
-          <li class="footer__socials--item youtube"><span class="visually-hidden">Мы на youtube</span>
-            <a class="footer__socials--item-icon " href="#">
+          <li class="footer__socials__item youtube"><span class="visually-hidden">Мы на youtube</span>
+            <a class="footer__socials__item-icon " href="#">
             <svg class="icon-youtube" width="18" height="18" viewBox="0 0 18 18" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -226,9 +231,9 @@
         </ul>
       </div>
       <div class="footer__developer">
-        <p class="footer__developer--text">Разработано</p>
-        <a class="footer__developer--page">
-        <svg class="footer__developper--icon" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <p class="footer__developer__text">Разработано</p>
+        <a class="footer__developer__page">
+        <svg class="footer__developper-icon" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#D22856"/>
           </svg>
         </a>
