@@ -55,74 +55,73 @@
       <form class="main-form__form">
         <div class="main-form__form-user user">
           <div class="user__surname">
-            <p class="user__surname-title">ФАМИЛИЯ:</p>
-            <input class="user__surname-form" type="text" placeholder="Укажите фамилию *">
+            <p class="user__surname-title">Фамилия:</p>
+            <input class="user__surname-form" type="text" name="surname" placeholder="Укажите фамилию *">
           </div>
           <div class="user__name">
-            <p class="user__name-title">ИМЯ:</p>
-            <input class="user__name-form" type="text" placeholder="Введите ваше имя *">
+            <p class="user__name-title">Имя:</p>
+            <input class="user__name-form" type="text" name="name" placeholder="Введите ваше имя *">
           </div>
           <div class="user__patronym">
-            <p class="user__patronym-title">ОТЧЕСТВО:</p>
-            <input class="user__patronym-form" type="text" placeholder="Ну и отчество тоже">
+            <p class="user__patronym-title">Отчество:</p>
+            <input class="user__patronym-form" type="text" name="patronym" placeholder="Ну и отчество тоже">
           </div>
         </div>
         <div class="main-form__form-achievement achievement">
           <p class="achievement__title">Ваши безбашенные достижения в путешествии</p>
           <div class="achievement__container">
             <label class="achievement__checkbox">
-              <input class="achievement__checkbox-form" type="checkbox" checked>
+              <input class="achievement__checkbox-form" type="checkbox" name="selfie-with-shake" checked>
               <p>Сделал селфи с акулой</p>
             </label>
             <label class="achievement__checkbox">
-              <input class="achievement__checkbox-form" type="checkbox" checked>
+              <input class="achievement__checkbox-form" type="checkbox" name="burned-on-the-beach" checked>
               <p>Обгорел на пляже</p>
             </label>
             <label class="achievement__checkbox">
-              <input class="achievement__checkbox-form" type="checkbox">
+              <input class="achievement__checkbox-form"  type="checkbox" name="saw-noris">
               <p>Видел Чака Норриса</p>
             </label>
             <label class="achievement__checkbox">
-              <input class="achievement__checkbox-form" type="checkbox">
+              <input class="achievement__checkbox-form" type="checkbox" name="bought-souvenir">
               <p>Накупил сувениров</p>
             </label>
             <label class="achievement__checkbox">
-              <input class="achievement__checkbox-form" type="checkbox" checked>
+              <input class="achievement__checkbox-form" type="checkbox" name="held-tower" checked>
               <p>Удержал башню</p>
             </label>
             <label class="achievement__checkbox">
-              <input class="achievement__checkbox-form" type="checkbox">
+              <input class="achievement__checkbox-form" type="checkbox" name="break-hotel">
               <p>Разгромил отель</p>
             </label>
           </div>
         </div>
         <div class="main-form__form-data data">
           <div class="data__phone">
-            <p class="data__phone-number">НОМЕР ТЕЛЕФОНА</p>
-            <input class="data__phone-form" type="text" value="Номер, пожалуйста">
+            <p class="data__phone-number">Номер телефона</p>
+            <input class="data__phone-form" type="text" name="phone" value="Номер, пожалуйста">
           </div>
           <div class="data__email">
-            <p class="data__email-title">АДРЕС ПОЧТЫ</p>
-            <input class="data__email-form" type="text" value="Введите почту *">
+            <p class="data__email-title">Адрес почты</p>
+            <input class="data__email-form" type="text" name="email" value="Введите почту *">
           </div>
         </div>
         <div class="main-form__form-travel-platform travel-platform">
           <p class="travel-platform-title">С каким приложением путешествовали?</p>
           <label class="travel-platform__radio">
-            <input class="travel-platform__radio-form" type="radio" checked>
-            <p>Pink для iOS</p>
+            <input class="travel-platform__radio-form" type="radio" name="type-platform" checked>
+            <span>Pink для iOS</span>
           </label>
           <label class="travel-platform__radio">
-            <input class="travel-platform__radio-form" type="radio">
-            <p>Pink на Android</p>
+            <input class="travel-platform__radio-form" type="radio" name="type-platform">
+            <span>Pink на Android</span>
           </label>
           <label class="travel-platform__radio">
-            <input class="travel-platform__radio-form" type="radio">
-            <p>Windows Phone</p>
+            <input class="travel-platform__radio-form" type="radio" name="type-platform"><span>Windows Phone</span>
           </label>
         </div>
         <div class="main-form__form-discription discription">
-          <p class="discription__title">ОПИШИТЕ СВОИ ЭМОЦИИ</p>
+          <p class="discription__title">Опишите свои эмоции</p>
           <textarea name="discription__coment">
             Можно прям в красках, не стесняясь в выражениях
           </textarea>
