@@ -1,1 +1,86 @@
 // Начните писать стили здесь
+@import url("./header/header-menu-backgraund.less");
+@import url("./header/header__main-download.less");
+@import url("./header/nav.less");
+@import url("./header/header__main-menu.less");
+@import url("./header/header__catalog.less");
+@import url("./header/header__form.less");
+@import url("./main/main-container.less");
+@import url("./main/contact.less");
+@import url("./main/main-form.less");
+@import url("./main/features.less");
+@import url("./main/price.less");
+@import url("./main/reviews.less");
+@import url("./main/main-catalog.less");
+@import url("./main/photo-card.less");
+@import url("./main/form-catalog.less");
+@import url("./footer/footer.less");
+@import url("./footer/footer__developer.less");
+@import url("./footer/footer__socials.less");
+@import url("./footer/footer__logo.less");
+@import url("./button.less");
+
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700, bold;
+  src: url("../fonts/opensansbold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700, bold;
+  src: url("../fonts/opensansbold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300, lighter;
+  src: url("../fonts/opensanslight.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300, lighter;
+  src: url("../fonts/opensanslight.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+  width: 320px;
+}
+
+.page-body {
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
