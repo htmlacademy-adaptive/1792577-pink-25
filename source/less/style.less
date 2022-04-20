@@ -1,1 +1,76 @@
-// Начните писать стили здесь
+@import url("./button.less");
+@import url("./contact.less");
+@import url("./download.less");
+@import url("./features.less");
+@import url("./footer.less");
+@import url("./geral.less");
+@import url("./header.less");
+@import url("./main.less");
+@import url("./nav.less");
+@import url("./price.less");
+@import url("./reviews.less");
+@import url("./slogan.less");
+@import url("./photo-card.less");
+@import url("./form-photo.less");
+@import url("./form.less");
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700, bold;
+  src: url("../fonts/opensansbold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700, bold;
+  src: url("../fonts/opensansbold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300, lighter;
+  src: url("../fonts/opensanslight.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300, lighter;
+  src: url("../fonts/opensanslight.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  width: 320px;
+  font-family: "Open Sans", "Aria", sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
