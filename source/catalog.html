@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -10,10 +11,11 @@
 <body class="page-body">
   <header class="header">
     <div class="header__backgraund">
-      <div class="header__menu">
+      <div class="header__wrapper">
         <a class="header__menu-logo" href="#">
           <img class="header__menu-logo-img" src="img/pink.svg" alt="Pink" width="74" height="23">
         </a>
+        <nav class="nav">
         <button class="header__menu-button" type="button"><span class="visually-hidden">Открыть меню</span>
           <svg width="50" height="24" viewBox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -21,8 +23,6 @@
               fill="white" />
           </svg>
         </button>
-      </div>
-      <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link" href="index.html">
@@ -46,6 +46,7 @@
           </li>
         </ul>
       </nav>
+      </div>
       <h1 class="header__catalog-title">Фотографии пользователей</h1>
     </div>
   </header>
@@ -72,8 +73,10 @@
                   fill="#D22856" />
               </svg>
             </button>
+            <div class="photo-card__like-contador">
             <span class="photo-card__like-text">Нравится:</span>
             <span class="photo-card__like-counter"> 215</span>
+            </div>
           </div>
         </div>
       </div>
@@ -92,8 +95,10 @@
                   fill="#D22856" />
               </svg>
             </button>
+            <div class="photo-card__like-contador">
             <span class="photo-card__like-text">Нравится:</span>
             <span class="photo-card__like-counter">356</span>
+            </div>
           </div>
         </div>
       </div>
@@ -112,8 +117,10 @@
                   fill="#D22856" />
               </svg>
             </button>
+            <div class="photo-card__like-contador">
             <span class="photo-card__like-text">Нравится:</span>
             <span class="photo-card__like-counter">666</span>
+            </div>
           </div>
         </div>
       </div>
@@ -132,8 +139,10 @@
                   fill="#D22856" />
               </svg>
             </button>
+            <div class="photo-card__like-contador">
             <span class="photo-card__like-text">Нравится:</span>
             <span class="photo-card__like-counter">215</span>
+            </div>
           </div>
         </div>
       </div>
@@ -152,8 +161,10 @@
                   fill="#D22856" />
               </svg>
             </button>
+            <div class="photo-card__like-contador">
             <span class="photo-card__like-text">Нравится:</span>
             <span class="photo-card__like-counter">4</span>
+          </div>
           </div>
         </div>
       </div>
@@ -172,8 +183,10 @@
                   fill="#D22856" />
               </svg>
             </button>
+            <div class="photo-card__like-contador">
             <span class="photo-card__like-text">Нравится:</span>
             <span class="photo-card__like-counter">356</span>
+            </div>
           </div>
         </div>
       </div>
@@ -192,16 +205,19 @@
                   fill="#D22856" />
               </svg>
             </button>
+            <div class="photo-card__like-contador">
             <span class="photo-card__like-text">Нравится:</span>
             <span class="photo-card__like-counter">2560</span>
+          </div>
           </div>
         </div>
       </div>
     </section>
     <form class="form-photo" action="https://echo.htmlacademy.ru" method="get">
-      <p class="form-photo__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      <p class="form-photo__slogan">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
       <div class="upload">
         <img class="upload-image" src="img/winter.png" alt="Зимний лес" width="280" height="374">
+        <div class="upload__wrapper">
         <ul class="upload__edit">
           <li class="upload__edit-crop">
             <button class="upload-button upload__edit-icon upload__edit-icon--curret">
@@ -252,6 +268,7 @@
           <button class="button button-upload-reset button-upload-reset--curret" type="reset">Отмена</button>
         </div>
       </div>
+    </div>
     </form>
   </main>
   <footer class="footer">

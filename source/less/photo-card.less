@@ -43,3 +43,37 @@
   color: #d22856;
   font-size: 12px;
 }
+
+@media (min-width: @tablet-width) {
+  .main__catalog-photos {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+  }
+
+  .photo-card__like {
+    justify-content: space-between;
+  }
+
+  .photo-card__like-button {
+    order: 2;
+  }
+
+  .photo-card-index {
+    grid-column: 1/3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main__catalog-photos {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 130px;
+  }
+
+  .photo-card-index {
+    grid-column: 1/4;
+  }
+}
