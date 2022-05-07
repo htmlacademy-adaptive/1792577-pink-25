@@ -16,32 +16,19 @@
   }
 }
 
-.header__wrapper {
-  min-height: 66px;
-
-  @media (min-width: @desktop-width) {
+@media (min-width: @desktop-width) {
+  .header__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     width: 940px;
-    height: 110px;
     margin: auto;
   }
 }
 
 .header__menu-logo {
-  min-height: 66px;
   margin-left: 20px;
   align-items: center;
-
-
-  @media (min-width: @tablet-width) {
-    min-height: 110px;
-  }
-
-  @media (min-width: @desktop-width) {
-    min-height: 110px;
-  }
 }
 
 .header__menu-button {
@@ -69,7 +56,6 @@
   line-height: 32px;
   text-align: center;
   width: 228px;
-  height: 64px;
   margin: auto;
 }
 
@@ -88,7 +74,6 @@
     font-size: 50px;
     line-height: 68px;
     width: 620px;
-    height: 175px;
   }
 }
 
@@ -105,6 +90,5 @@
     font-size: 50px;
     line-height: 68px;
     width: 747px;
-    height: 106px;
   }
 }

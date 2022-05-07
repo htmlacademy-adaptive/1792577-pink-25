@@ -216,10 +216,11 @@
     <form class="form-photo" action="https://echo.htmlacademy.ru" method="get">
       <p class="form-photo__slogan">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
       <div class="upload">
+        <div class="upload__wrapper-container">
         <img class="upload-image" src="img/winter.png" alt="Зимний лес" width="280" height="374">
         <div class="upload__wrapper">
-        <ul class="upload__edit">
-          <li class="upload__edit-crop">
+        <ul class="upload__edit upload__edit-list">
+          <li class="upload__edit-crop upload__edit-item">
             <button class="upload-button upload__edit-icon upload__edit-icon--curret">
               <svg class="edit-icon" width="44" height="44" viewBox="0 0 44 44" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -229,7 +230,7 @@
               </svg>
             </button>
           </li>
-          <li class="upload__edit-fill">
+          <li class="upload__edit-fill upload__edit-item">
             <button class="upload-button upload__edit-icon">
               <svg class="fill-icon" width="48" height="43" viewBox="0 0 48 43" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -242,7 +243,7 @@
               </svg>
             </button>
           </li>
-          <li class="upload__edit-contrast">
+          <li class="upload__edit-contrast upload__edit-item">
             <button class="upload-button upload__edit-icon">
               <svg class="contrass" width="32" height="32" viewBox="0 0 32 32" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -266,6 +267,7 @@
         <div class="upload__button-post">
           <button class="button button-upload-submit button-upload-submit--curret" type="submit">Запостить</button>
           <button class="button button-upload-reset button-upload-reset--curret" type="reset">Отмена</button>
+        </div>
         </div>
       </div>
     </div>

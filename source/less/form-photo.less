@@ -6,16 +6,19 @@
   line-height: 30px;
   text-align: center;
   min-width: 280px;
-  min-height: 71px;
   margin: auto;
 }
 
 .upload {
+  min-width: 320px;
+}
+
+.upload__wrapper-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 757px;
   background-color: #f2f2f2;
+  margin-top: 20px;
 }
 
 .upload__edit {
@@ -31,11 +34,24 @@
 .upload__button-post {
   display: flex;
   flex-direction: column;
-  height: 122px;
   justify-content: space-between;
+  margin: 40px auto;
+}
+
+.button-upload-submit {
+  padding: 20px 90px;
+  margin-bottom: 20px;
+}
+
+.button-upload-reset {
+  padding: 20px 90px;
 }
 
 @media (min-width: @tablet-width) {
+  .upload {
+    min-width: 660px;
+  }
+
   .form-photo__slogan {
     background-color: #ffffff;
     color: #283645;
@@ -44,18 +60,15 @@
     line-height: 30px;
     text-align: center;
     min-width: 422px;
-    min-height: 43px;
     margin: auto;
   }
 
-  .upload {
+  .upload__wrapper-container {
     display: grid;
     min-width: 620px;
-    min-height: 511px;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-top: 57px;
   }
 
   .upload__edit {
@@ -68,31 +81,64 @@
     justify-content: space-between;
     padding: 0;
   }
+
+  .button-upload-reset {
+    padding: 20px 80px;
+  }
 }
 
 @media (min-width: @desktop-width) {
-  .upload {
+  .upload__wrapper-container {
     display: grid;
-    min-width: 940px;
-    min-height: 514px;
+    width: 940px;
     grid-template-columns: 1fr 2fr;
     gap: 90px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: flex-start;
   }
 
   .upload__wrapper {
     display: flex;
     flex-direction: column;
-    height: 400px;
     justify-content: space-between;
+    margin-right: 80px;
+  }
+
+  .upload-image {
+    margin: 57px 0 57px 80px;
+  }
+
+  .upload__edit {
+    margin-top: 55px;
+    margin-right: 60px;
+    margin-bottom: 90px;
+  }
+
+  .upload__edit-item {
+    padding-bottom: 30px;
   }
 
   .upload__button-post {
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    margin-top: auto;
+    margin-left: 0;
+  }
+
+  .range {
+    display: none;
+  }
+
+  .button-upload-submit {
+    padding: 20px 40px;
+    margin-right: 45px;
+  }
+
+  .button-upload-reset {
+    padding: 20px 55px;
   }
 }
