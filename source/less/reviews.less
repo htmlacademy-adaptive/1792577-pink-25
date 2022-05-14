@@ -1,6 +1,5 @@
 .reviews {
   background-color: #ffffff;
-  min-height: 364px;
 }
 
 .reviews__list {
@@ -30,9 +29,44 @@
   text-align: center;
 }
 
+.reviews__desc {
+  visibility: hidden;
+}
+
 .reviews__toggles {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 60px;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__title {
+    order: 2;
+  }
+
+  .reviews__text {
+    order: 1;
+  }
+
+  .reviews__desc {
+    visibility: visible;
+    order: 3;
+    color: #283645;
+    font-weight: 400;
+    font-size: 14px;
+    list-style: 30px;
+    text-align: center;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__wrapper {
+    margin: 0 130px 41px;
+  }
 }
