@@ -9,16 +9,13 @@
   margin: auto;
 }
 
-.upload {
-  width: 320px;
-}
-
 .upload__wrapper-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #f2f2f2;
   margin-top: 20px;
+  padding: 20px;
 }
 
 .upload__edit {
@@ -49,7 +46,6 @@
 
 @media (min-width: @tablet-width) {
   .upload {
-    width: 660px;
     background-color: #f2f2f2;
     margin-left: auto;
     margin-right: auto;
@@ -76,10 +72,13 @@
 
   .upload__wrapper-container {
     display: grid;
-    min-width: 620px;
+    width: 620px;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     margin-top: 57px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
   }
 
   .upload__edit {
