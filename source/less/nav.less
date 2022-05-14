@@ -1,10 +1,9 @@
 .nav {
+  position: relative;
   background-color: #283445;
+  width: auto;
   margin: 0;
-
-  @media (min-width: @desktop-width) {
-    background-color: transparent;
-  }
+  z-index: 1;
 }
 
 .nav__list {
@@ -13,14 +12,13 @@
   align-items: center;
   list-style-type: none;
   text-decoration: none;
-  margin: 27px;
-
-  @media (min-width: @desktop-width) {
-    flex-direction: row;
-  }
+  margin: 0 auto;
+  padding: 0;
 }
 
 .nav__link {
+  position: relative;
+  display: block;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
@@ -28,9 +26,113 @@
   font-size: 18px;
   line-height: 32px;
   white-space: nowrap;
+  padding: 25px;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #485461;
+}
 
-  @media (min-width: @desktop-width) {
+.nav__link:hover {
+  color: #d22856;
+}
+
+.nav__menu-button {
+  position: absolute;
+  top: -70px;
+  right: 0;
+  cursor: pointer;
+  z-index: 2;
+  width: 80px;
+  height: 50px;
+}
+
+.nav--closed .nav__menu-button::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+  border-radius: 30px;
+}
+
+.nav--closed .nav__menu-button:active::before {
+  background-color: fade(#ffffff, 30%);
+  box-shadow:
+    0 8px 0 0 fade(#ffffff, 30%),
+    0 16px 0 0 fade(#ffffff, 30%);
+}
+
+.nav--opened::before,
+.nav--opened::after {
+  content: "";
+  position: absolute;
+  top: -43px;
+  right: 20px;
+  width: 29px;
+  height: 3px;
+  background-color: #ffffff;
+}
+
+.nav--opened::before {
+  transform: rotate(45deg);
+  box-shadow: none;
+}
+
+.nav--opened::after {
+  transform: rotate(-45deg);
+}
+
+.nav--nojs .nav {
+  position: static;
+}
+
+.nav--nojs .nav__item {
+  display: block;
+}
+
+@media (max-width: @tablet-width) {
+  .nav--closed .nav__item {
+    display: none;
+  }
+
+  .nav--opened .nav__item {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .nav {
+    display: flex;
+    background-color: transparent;
+  }
+
+  .nav__list {
+    flex-direction: row;
+  }
+
+  .nav__link {
     padding-left: 39px;
     padding-right: 39px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 300;
+    border: none;
+  }
+
+  .nav__menu-button {
+    display: none;
+  }
+
+  .nav__link--current::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: calc(100% - 78px);
+    background-color: #ffffff;
+    bottom: 13px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
