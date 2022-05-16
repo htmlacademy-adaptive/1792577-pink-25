@@ -16,6 +16,29 @@
   padding: 0;
 }
 
+.nav__item {
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #485461;
+  width: 100%;
+}
+
+.nav__item::after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #485461;
+  width: 100%;
+  top: -1px;
+}
+
+.nav__item::before {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #000000;
+  width: 100%;
+  bottom: 0;
+}
+
+
 .nav__link {
   position: relative;
   display: block;
@@ -27,12 +50,18 @@
   line-height: 32px;
   white-space: nowrap;
   padding: 25px;
-  border-top: 1px solid #000000;
-  border-bottom: 1px solid #485461;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
+
 
 .nav__link:hover {
   color: #d22856;
+}
+
+.nav__link:active {
+  color: #55344f;
 }
 
 .nav__menu-button {
@@ -57,11 +86,18 @@
   border-radius: 30px;
 }
 
-.nav--closed .nav__menu-button:active::before {
-  background-color: fade(#ffffff, 30%);
+.nav--closed .nav__menu-button:hover::before {
+  background-color: #d22856;
   box-shadow:
-    0 8px 0 0 fade(#ffffff, 30%),
-    0 16px 0 0 fade(#ffffff, 30%);
+    0 8px 0 0 #d22856,
+    0 16px 0 0 #d22856;
+}
+
+.nav--closed .nav__menu-button:active::before {
+  background-color: fade(#d22856, 30%);
+  box-shadow:
+    0 8px 0 0 fade(#d22856, 30%),
+    0 16px 0 0 fade(#d22856, 30%);
 }
 
 .nav--opened::before,
@@ -73,6 +109,17 @@
   width: 29px;
   height: 3px;
   background-color: #ffffff;
+}
+
+.nav--opened:hover::before,
+.nav--opened:hover::after {
+  background-color: #d22856;
+}
+
+.nav--opened:active::before,
+.nav--opened:active::after {
+  background-color: #d22856;
+  opacity: 0.3;
 }
 
 .nav--opened::before {
@@ -92,24 +139,37 @@
   display: block;
 }
 
-@media (max-width: @tablet-width) {
+@media (max-width: @desktop-width) {
   .nav--closed .nav__item {
     display: none;
   }
 
   .nav--opened .nav__item {
-    display: none;
+    display: block;
   }
 }
 
 @media (min-width: @desktop-width) {
   .nav {
     display: flex;
+    flex-wrap: wrap;
     background-color: transparent;
   }
 
   .nav__list {
     flex-direction: row;
+  }
+
+  .nav__item {
+    border: none;
+  }
+
+  .nav__item::after {
+    border: none;
+  }
+
+  .nav__item::before {
+    border: none;
   }
 
   .nav__link {
