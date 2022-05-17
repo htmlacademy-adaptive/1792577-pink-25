@@ -44,6 +44,18 @@
   padding: 20px 90px;
 }
 
+.corrigir-icon {
+  fill: #b6babe;
+}
+
+.corrigir-icon:active {
+  fill: #d22856;
+}
+
+.corrigir-icon:hover {
+  fill: #8d949c;
+}
+
 @media (min-width: @tablet-width) {
   .upload {
     background-color: #f2f2f2;
@@ -96,6 +108,10 @@
   .button-upload-reset {
     padding: 20px 80px;
   }
+
+  .corrigir-icon {
+    fill: #d22856;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -127,6 +143,7 @@
     flex-direction: column;
     justify-content: space-between;
     margin-left: 0;
+    padding-left: 45px;
   }
 
   .upload__edit {
@@ -156,5 +173,10 @@
 
   .button-upload-reset {
     padding: 20px 55px;
+  }
+
+  .upload-image {
+    padding-left: 80px;
+    padding-right: 45px;
   }
 }

@@ -14,7 +14,11 @@
       <div class="header__wrapper">
         <div class="header__menu">
           <a class="header__menu-logo" href="#">
+            <picture>
+              <source media="(min-width:1200px)" srcset="img/logotype-white-desktop.svg" width="147" height="40">
+              <source media="(min-width:660px)" srcset="img/logotype-white-tablet.svg" width="140" height="40">
             <img class="header__menu-logo-img" src="img/pink.svg" alt="Pink" width="74" height="23">
+          </picture>
           </a>
           <nav class="nav nav--closed nav--nojs">
             <button class="nav__menu-button" type="button"><span class="visually-hidden">Открыть меню</span>
@@ -85,22 +89,27 @@
                 </label>
                 <label class="achievement__checkbox">
                   <input class="achievement__checkbox-form visually-hidden" type="checkbox" name="burned-on-the-beach" checked>
+                  <span class="achievement__checkbox-choice"></span>
                   <span class="achievement__checkbox-text fieldset-text">Обгорел на пляже</span>
                 </label>
                 <label class="achievement__checkbox">
                   <input class="achievement__checkbox-form visually-hidden" type="checkbox" name="saw-noris">
+                  <span class="achievement__checkbox-choice"></span>
                   <span class="achievement__checkbox-text fieldset-text">Видел Чака Норриса</span>
                 </label>
                 <label class="achievement__checkbox">
                   <input class="achievement__checkbox-form visually-hidden" type="checkbox" name="bought-souvenir">
+                  <span class="achievement__checkbox-choice"></span>
                   <span class="achievement__checkbox-text fieldset-text">Накупил сувениров</span>
                 </label>
                 <label class="achievement__checkbox">
                   <input class="achievement__checkbox-form visually-hidden" type="checkbox" name="held-tower" checked>
+                  <span class="achievement__checkbox-choice"></span>
                   <span class="achievement__checkbox-text fieldset-text">Удержал башню</span>
                 </label>
                 <label class="achievement__checkbox">
                   <input class="achievement__checkbox-form visually-hidden" type="checkbox" name="break-hotel">
+                  <span class="achievement__checkbox-choice"></span>
                   <span class="achievement__checkbox-text fieldset-text">Разгромил отель</span>
                 </label>
               </div>
@@ -128,15 +137,18 @@
             <legend class="platform__title legend-title">С каким приложением путешествовали?</legend>
             <div class="platform__wrapper">
               <label class="platform__radio">
-                <input class="platform__radio-form" type="radio" name="type-platform" checked>
+                <input class="platform__radio-form visually-hidden" type="radio" name="type-platform" checked>
+                <span class="platform__radio-choice"></span>
                 <span class="platform__radio-text fieldset-text">Pink для iOS</span>
               </label>
               <label class="platform__radio">
-                <input class="platform__radio-form" type="radio" name="type-platform">
+                <input class="platform__radio-form visually-hidden" type="radio" name="type-platform">
+                <span class="platform__radio-choice"></span>
                 <span class="platform__radio-text fieldset-text">Pink на Android</span>
               </label>
               <label class="platform__radio">
-                <input class="platform__radio-form" type="radio" name="type-platform">
+                <input class="platform__radio-form visually-hidden" type="radio" name="type-platform">
+                <span class="platform__radio-choice"></span>
                 <span class="platform__radio-text fieldset-text">Windows Phone</span>
               </label>
             </div>
