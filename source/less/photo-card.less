@@ -14,8 +14,23 @@
 }
 
 .photo-day {
+  position: relative;
   width: 100%;
   margin-bottom: -4px;
+}
+
+.photo-card__slogan-day {
+  position: absolute;
+  width: 140px;
+  height: 36px;
+  background-color: #d22856;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 30px;
+  text-align: center;
+  right: 20px;
 }
 
 .photo-card-index {
@@ -66,24 +81,16 @@
   font-size: 12px;
 }
 
-.corrigir-icon {
-  fill: #b6babe;
-}
-
-.corrigir-icon:active {
-  fill: #d22856;
-}
-
-.corrigir-icon:hover {
-  fill: #8d949c;
-}
-
 @media (min-width: @tablet-width) {
   .photo-card-index {
     width: 640px;
     margin-left: auto;
     margin-right: auto;
     grid-column: 1/3;
+  }
+
+  .photo-card__slogan-day {
+    bottom: 180px;
   }
 
   .photo-card__container {
@@ -118,6 +125,11 @@
     margin-left: auto;
     margin-right: auto;
     grid-column: 1/4;
+  }
+
+  .photo-card__slogan-day {
+    right: 150px;
+    bottom: 0;
   }
 
   .photo-card__container {

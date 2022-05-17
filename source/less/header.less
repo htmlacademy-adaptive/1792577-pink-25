@@ -1,12 +1,16 @@
 .header__backgraund {
   position: relative;
-  background-image: url("/img/background-first-page.png");
-  background-position: 0 -30px;
+  background-image: url("../img/back-mobile.png");
+  background-position: 0 0;
   background-repeat: no-repeat;
   min-height: 462px;
   min-width: 320px;
   background-color: #152431;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.png");
+  }
 }
 
 .header__wrapper {
@@ -16,7 +20,6 @@
 .header__menu-logo-img {
   margin-left: 20px;
   align-items: center;
-  width: 74px;
   height: 66px;
 }
 
@@ -47,12 +50,16 @@
 @media (min-width: @tablet-width) {
   .header__backgraund {
     position: relative;
-    background-image: url("/img/background-first-page.png");
-    background-position: 0 -30px;
+    background-image: url("../img/back-tablet.png");
+    background-position: 0 -35px;
     background-repeat: no-repeat;
     min-height: 709px;
     background-color: #152431;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.png");
+    }
   }
 
   .header__catalog-title {
@@ -74,8 +81,19 @@
 
 @media (min-width: @desktop-width) {
   .header__backgraund {
+    position: relative;
+    background-image: url("../img/back-desktop.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
     min-height: 853px;
+    background-color: #152431;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.png");
+    }
   }
+
 
   .header__form-text {
     font-size: 50px;
