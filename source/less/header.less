@@ -23,6 +23,31 @@
   height: 66px;
 }
 
+.header__menu-logo-mobile {
+  display: block;
+  margin-left: 20px;
+  align-items: center;
+  height: 66px;
+  fill: #ffffff;
+}
+
+.header__menu-logo-mobile:hover {
+  fill: #d22856;
+}
+
+.header__menu-logo-mobile:active {
+  fill: #ffffff;
+  opacity: 0.3;
+}
+
+.header__menu-logo-tablet {
+  display: none;
+}
+
+.header__menu-logo-desktop {
+  display: none;
+}
+
 .nav__menu-button {
   background-color: transparent;
   border: transparent;
@@ -62,6 +87,32 @@
     }
   }
 
+  .header__menu-logo-mobile {
+    display: none;
+  }
+
+  .header__menu-logo-tablet {
+    display: block;
+    margin-left: 20px;
+    align-items: center;
+    height: 66px;
+    fill: #ffffff;
+  }
+
+  .header__menu-logo-tablet:hover {
+    fill: #d22856;
+  }
+
+  .header__menu-logo-tablet:active {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
+
+
+  .header__menu-logo-desktop {
+    display: none;
+  }
+
   .header__catalog-title {
     color: #ffffff;
     width: 358px;
@@ -92,6 +143,28 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-desktop@2x.png");
     }
+  }
+
+  .header__menu-logo-mobile {
+    display: none;
+  }
+
+  .header__menu-logo-tablet {
+    display: none;
+  }
+
+  .header__menu-logo-desktop {
+    display: block;
+    fill: #ffffff;
+  }
+
+  .header__menu-logo-desktop:hover {
+    fill: #d22856;
+  }
+
+  .header__menu-logo-desktop:active {
+    fill: #ffffff;
+    opacity: 0.3;
   }
 
 
