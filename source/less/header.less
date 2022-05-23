@@ -1,5 +1,20 @@
 .header__backgraund {
   position: relative;
+  background-image: url("../img/screen.png"), url("../img/phone.png"), url("../img/back-mobile.png");
+  background-position: 103px 205px, 0 175px, 0 0;
+  background-repeat: no-repeat;
+  min-height: 462px;
+  min-width: 320px;
+  background-color: #152431;
+  background-size: 113px 201px, 320px 286px, cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/screen@2x.png"), url("../img/phone@2x.png"), url("../img/back-mobile@2x.png");
+  }
+}
+
+.header__backgraund-form {
+  position: relative;
   background-image: url("../img/back-mobile.png");
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -11,6 +26,32 @@
   @media (min-resolution: 2dppx) {
     background-image: url("../img/back-mobile@2x.png");
   }
+}
+
+.header__backgraund-catalog {
+  position: relative;
+  background-image: url("../img/back-mobile.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  min-height: 462px;
+  min-width: 320px;
+  background-color: #152431;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.png");
+  }
+}
+
+
+.header__slogan {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+  padding: 30px 20px 35px 20px;
+  margin: 0;
 }
 
 .header__wrapper {
@@ -75,6 +116,20 @@
 @media (min-width: @tablet-width) {
   .header__backgraund {
     position: relative;
+    background-image: url("../img/screen.png"), url("../img/phone.png"), url("../img/back-tablet.png");
+    background-position: 355px 235px, 154px 177px, 0 -35px;
+    background-repeat: no-repeat;
+    min-height: 709px;
+    background-color: #152431;
+    background-size: 218px 381px, 620px 545px, cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/screen@2x.png"), url("../img/phone@2x.png"), url("../img/back-tablet@2x.png");
+    }
+  }
+
+  .header__backgraund-form {
+    position: relative;
     background-image: url("../img/back-tablet.png");
     background-position: 0 -35px;
     background-repeat: no-repeat;
@@ -85,6 +140,31 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-tablet@2x.png");
     }
+  }
+
+  .header__backgraund-catalog {
+    position: relative;
+    background-image: url("../img/back-tablet.png");
+    background-position: 0 -35px;
+    background-repeat: no-repeat;
+    min-height: 709px;
+    background-color: #152431;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.png");
+    }
+  }
+
+  .header__slogan {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 48px;
+    text-align: center;
+    color: #ffffff;
+    padding: 30px 20px 35px 20px;
+    margin: 100px 0;
+    width: 257px;
   }
 
   .header__menu-logo-mobile {
@@ -133,16 +213,38 @@
 @media (min-width: @desktop-width) {
   .header__backgraund {
     position: relative;
-    background-image: url("../img/back-desktop.png");
-    background-position: 0 0;
+    background-image: url("../img/screen-desktop.png"), url("../img/phone-desctop.png"), url("../img/back-desktop.png");
+    background-position: 716px 272px, 145px 209px, 0 -1px;
     background-repeat: no-repeat;
-    min-height: 853px;
+    background-color: #152431;
+    background-size: 232px 414px, 1050px 645px, cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/screen-desctop@2x.png"), url("../img/phone-desctop@2x.png"), url("../img/back-desktop@2x.png");
+    }
+  }
+
+  .header__backgraund-form {
+    position: relative;
+    background-image: url("../img/back-desktop.png");
+    background-position: 0 -1px;
+    background-repeat: no-repeat;
     background-color: #152431;
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-desktop@2x.png");
     }
+  }
+
+  .header__slogan {
+    position: absolute;
+    top: 78px;
+    left: 136px;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 68px;
+    padding-bottom: 440px;
   }
 
   .header__menu-logo-mobile {
@@ -182,6 +284,7 @@
     margin-right: auto;
     justify-content: space-between;
     align-items: center;
+    padding-top: 11px;
   }
 
   .nav__menu-button {

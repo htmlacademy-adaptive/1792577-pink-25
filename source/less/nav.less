@@ -150,10 +150,20 @@
 }
 
 @media (min-width: @desktop-width) {
+  .nav--closed .nav__item {
+    display: block;
+  }
+
+  .nav--opened .nav__item {
+    display: block;
+  }
+
   .nav {
     display: flex;
     flex-wrap: wrap;
     background-color: transparent;
+    width: 659px;
+    margin-top: 8px;
   }
 
   .nav__list {
@@ -179,6 +189,7 @@
     line-height: 18px;
     font-weight: 300;
     border: none;
+    text-transform: capitalize;
   }
 
   .nav__menu-button {
