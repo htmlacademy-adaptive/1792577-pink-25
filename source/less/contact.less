@@ -1,10 +1,6 @@
 .contact__wrapper {
   text-align: center;
-  margin: 50px 50px 0;
-}
-
-.contact {
-  background-color: #ffffff;
+  margin: 50px 50px 40px;
 }
 
 .contact__text {
@@ -46,8 +42,15 @@
   text-align: center;
 }
 
-.contact__map-image {
-  height: 200px;
+.contact__map {
+  position: relative;
+}
+
+.contact__detalies {
+  position: absolute;
+  width: 100%;
+  left: -2px;
+  top: -40px;
 }
 
 @media (min-width: @tablet-width) {
@@ -85,6 +88,13 @@
 
   .contact__map-image {
     height: 374px;
+  }
+
+  .contact__detalies {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -40px;
   }
 }
 
